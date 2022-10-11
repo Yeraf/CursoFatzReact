@@ -4,6 +4,7 @@ import { UserCard } from "./Component/Gretings";
 import { Button } from "./Component/Button";
 import { TaskCard } from "./Component/Task";
 import { Post } from "./Component/Post";
+import {Props} from "./Component/Props";
 
 function App() {
   function sumar(x, y) {
@@ -20,6 +21,11 @@ function App() {
 
   return (
     <div className="App">
+
+      <div> 
+        <Props name="Pedro" lastname="Mora" age="18" location="NY"/>
+      </div>
+
       <div>
         <Post/>
       </div>
