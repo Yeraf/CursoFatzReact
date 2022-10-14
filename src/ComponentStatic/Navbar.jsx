@@ -31,7 +31,12 @@ function Navbar() {
               </li>
               <li class="nav-item active">
                 <Link class="nav-link" to='/api'>
-                  Api
+                  ApiRick
+                </Link>
+              </li>
+              <li class="nav-item active">
+                <Link class="nav-link" to='/pokeapi'>
+                  PokeApi
                 </Link>
               </li>
               <li class="nav-item active">

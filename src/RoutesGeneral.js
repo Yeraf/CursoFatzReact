@@ -3,6 +3,7 @@ import Main from "./Component/Main";
 import Api from "./Component/Api";
 import Contact from "./Component/Contact";
 import Navbar from "./ComponentStatic/Navbar";
+import PokeApi from "./Component/PokeApi";
 
 function RoutesGeneral () {
     return (
@@ -11,6 +12,7 @@ function RoutesGeneral () {
         <Routes>
             <Route exact index path="/"  element={<Main/>}/>
             <Route path="/api" element={<Api/>}/>
+            <Route path="/pokeapi" element={<PokeApi/>}/>
             <Route path="/contact" element={<Contact/>}/>
         </Routes>
         </BrowserRouter>
