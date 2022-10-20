@@ -12,7 +12,7 @@ function RoutesGeneral () {
         <Routes>
             <Route exact index path="/"  element={<Main/>}/>
             <Route path="/api" element={<Api/>}/>
-            <Route path="/pokeapi" element={<PokeApi/>}/>
+            <Route path="/openWeather" element={<PokeApi/>}/>
             <Route path="/contact" element={<Contact/>}/>
         </Routes>
         </BrowserRouter>

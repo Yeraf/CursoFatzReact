@@ -1,29 +1,35 @@
-import React, {useEffect,useState} from "react";
+import React, { useEffect, useState } from "react";
+import "../CSS/css/OpenWeatherMap.css";
 
-function PokeApi() {
+function PokeApi({newLocation}) {
+  const [city, setCity] = useState("");
 
-  const URL = "https://randomuser.me/api/";
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log({ city });
+    if (city === "" || !city) return;
 
-  // const [useEffect, useState] = 
-
-  fetch(URL)
-  .then(response => response.json())
-  .then(data => console.log(data))
+    newLocation(city);
+  };
 
   return (
-    <div>
-      <h1>Pokedex</h1>
-      <div className="pokemon-container">
-
-      </div>
-        {/* <div class="spinner-border text-info" role="status">
-          <span class="sr-only">Loading...</span>
-        </div> */}
+    <div className="container">
+      <h3>OpenWeatherMap</h3>
+      <form onSubmit={onsubmit}>
+        <div className="input-group mb-3 mx-auto">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Ciudad"
+            onChange={(e) => setCity(e.target.value)}
+          />
+          <button className="btn btn-primary input-group-text" type="submit">
+            Buscar
+          </button>
+        </div>
+      </form>
     </div>
   );
 }
 
 export default PokeApi;
-
-
-// https://pokeapi.co/api/v2/pokemon/

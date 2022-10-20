@@ -35,8 +35,8 @@ function Navbar() {
                 </Link>
               </li>
               <li class="nav-item active">
-                <Link class="nav-link" to='/pokeapi'>
-                  PokeApi
+                <Link class="nav-link" to='/openWeather'>
+                OpenWeather
                 </Link>
               </li>
               <li class="nav-item active">
