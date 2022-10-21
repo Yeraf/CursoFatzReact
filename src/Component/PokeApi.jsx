@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../CSS/css/OpenWeatherMap.css";
+import WeatherPanel from "./WeatherPanel";
 
 function PokeApi({newLocation}) {
   const [city, setCity] = useState("");
@@ -28,6 +29,7 @@ function PokeApi({newLocation}) {
           </button>
         </div>
       </form>
+      <WeatherPanel></WeatherPanel>
     </div>
   );
 }
